@@ -1,0 +1,174 @@
+@charset "UTF-8";
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main-image {
+  width: 80px;
+}
+
+.btn {
+  background-color: #23452D !important;
+}
+
+.bg-navbar {
+  background-color: #23452D;
+}
+
+.navbar-toggler i {
+  font-size: xx-large;
+}
+
+#bg-modal-subscription {
+  background-color: #8C8984;
+}
+
+.bg-modal-button {
+  background-color: #23452D;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  width: 100px;
+  height: 40px;
+}
+
+.bg-footer {
+  background-color: #8C8984;
+}
+
+.title-navbar {
+  font-weight: 600;
+}
+
+/* main{
+  height: 80vh;
+} */
+#pie {
+  color: #23452D;
+  text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+  #pie {
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 700px) {
+  #pie {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  #pie {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #pie {
+    height: 20vh;
+  }
+}
+nav {
+  position: relative;
+}
+
+@media screen and (min-width: 990px) {
+  #menu-nav {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #menu-login {
+    position: absolute;
+    left: 180%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #menu-login {
+    position: absolute;
+    left: 210%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #menu-login {
+    position: absolute;
+    left: 230%;
+  }
+}
+/* @media screen and (max-width:767px){
+  #btn-close{
+      visibility: hidden;
+  }
+  } */
+@media screen and (min-height: 800px) and (min-width: 768px) {
+  #pie {
+    height: 21vh;
+  }
+}
+select {
+  border-radius: 5px;
+}
+
+#justify-text {
+  text-align: justify !important;
+}
+
+/* galería de imágenes */
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+.rounded-border {
+  border: 3px solid rgba(27, 8, 8, 0.53);
+  border-radius: 15px;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.rounded-border:hover {
+  border-color: #f3f3f3;
+  transform: scale(1.05);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-name {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image-container:hover .image-name {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .gallery-image {
+    transition: transform 0.2s ease-in-out;
+  }
+  .rounded-border {
+    border-width: 2px;
+  }
+  .image-name {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,18 @@
+#contact {
+  margin-top: 120px;
+}
+
+#div-iframe {
+  position: relative;
+  padding-top: 25px;
+  height: 65vh;
+}
+#div-iframe iframe {
+  position: absolute;
+  top: 0;
+  width: 85%;
+  height: 100%;
+  border-radius: 1%;
+}
+
+/*# sourceMappingURL=contact.css.map */

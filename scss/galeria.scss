@@ -1,0 +1,60 @@
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.rounded-border {
+  border: 3px solid rgba(27, 8, 8, 0.53);
+  border-radius: 15px;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  &:hover {
+    border-color: #f3f3f3;
+    transform: scale(1.05);
+  }
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-name {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image-container:hover .image-name {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .gallery-image {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .rounded-border {
+    border-width: 2px;
+  }
+
+  .image-name {
+    font-size: 12px;
+  }
+}
